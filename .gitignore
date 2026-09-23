@@ -9,7 +9,6 @@ __pycache__/
 venv/
 
 # Editors and OS
-.vscode/
 .idea/
 .DS_Store
 *.swp
@@ -20,12 +19,16 @@ venv/
 *.ckpt
 *.safetensors
 *.onnx
+*.engine
 *.bin
 *.xml
 *_deploy.pt
 checkpoints/
 datasets/
 runs/
+# Benchmark measurements are local artifacts; commit only their Markdown reports.
+docs/benchmarks/*.json
+docs/benchmarks/*.json.gz
 third_party/
 .hf_cache/
 wandb/
@@ -54,3 +57,5 @@ assets/reel/poster.jpg
 
 # The report PDF: read it on arXiv rather than carrying 12 MB per revision here
 main.pdf
+config.bat
+node_modules
